@@ -3,13 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nathalie — Portfolio</title>
+  <title>Nathalie Dubois — Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
     rel="stylesheet"
@@ -17,156 +13,161 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="page-grid" aria-hidden="true"></div>
 
-  <!-- ── Navigation ──────────────────────────────────────── -->
-  <nav>
-    <span class="nav-logo">Nathalie</span>
+  <nav class="site-nav">
+    <a class="nav-logo" href="#top">Nathalie</a>
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
       <li><a href="#work">Work</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <a class="nav-cta" href="mailto:hello@nathalie.design">Let’s talk</a>
   </nav>
 
-  <!-- ── Hero ────────────────────────────────────────────── -->
-  <section id="hero">
-    <p class="hero-eyebrow">Available for projects</p>
-    <h1 class="hero-name">Nathalie<br/>Dubois</h1>
-    <p class="hero-tagline">
-      Designer &amp; developer crafting thoughtful digital experiences.
+  <header id="top" class="hero">
+    <p class="hero-kicker reveal">Independent designer + front-end partner</p>
+    <h1 class="hero-title reveal">
+      I design and build portfolio experiences for brands and founders with taste.
+    </h1>
+    <p class="hero-description reveal">
+      I help people communicate their value through thoughtful digital work —
+      from visual direction to production-ready interfaces.
     </p>
-    <a class="hero-cta" href="#work">
-      View my work <span aria-hidden="true">→</span>
-    </a>
-
-    <div class="hero-scroll" aria-hidden="true">
-      <div class="hero-scroll-line"></div>
-      <span>Scroll</span>
+    <div class="hero-actions reveal">
+      <a class="button button-primary" href="#work">View selected work</a>
+      <a class="button button-ghost" href="#contact">Start a project</a>
     </div>
-  </section>
-
-  <!-- ── About ───────────────────────────────────────────── -->
-  <section id="about">
-    <p class="section-label">About me</p>
-    <div class="about-grid">
-      <h2 class="about-headline reveal">
-        I build things that are simple, precise, and purposeful.
-      </h2>
-      <div class="about-body reveal">
-        <p>
-          I'm a multidisciplinary designer and front-end developer based in
-          Paris. I believe the best work sits at the intersection of rigorous
-          craft and quiet restraint — nothing superfluous, everything intentional.
-        </p>
-        <p>
-          With over five years of experience working with agencies, startups, and
-          independent clients, I bring both strategic thinking and meticulous
-          execution to every project.
-        </p>
-        <ul class="skills-list stagger-parent">
-          <li class="reveal">UI / UX Design</li>
-          <li class="reveal">Front-End Development</li>
-          <li class="reveal">Brand Identity</li>
-          <li class="reveal">Motion Design</li>
-          <li class="reveal">Art Direction</li>
-          <li class="reveal">Typography</li>
-        </ul>
+    <div class="hero-metrics stagger-parent">
+      <div class="metric reveal">
+        <span class="metric-value">35+</span>
+        <span class="metric-label">Projects delivered</span>
+      </div>
+      <div class="metric reveal">
+        <span class="metric-value">6</span>
+        <span class="metric-label">Years of experience</span>
+      </div>
+      <div class="metric reveal">
+        <span class="metric-value">12</span>
+        <span class="metric-label">Global clients</span>
       </div>
     </div>
-  </section>
+  </header>
 
-  <!-- ── Work ────────────────────────────────────────────── -->
-  <section id="work">
-    <p class="section-label">Selected work</p>
-    <div class="projects-grid stagger-parent">
+  <main>
+    <section id="work" class="section">
+      <div class="section-head">
+        <p class="section-label">Selected Work</p>
+        <h2 class="section-title reveal">Built to feel clear, confident, and unmistakably yours.</h2>
+      </div>
+      <div class="projects stagger-parent">
+        <article class="project reveal">
+          <div class="project-media project-media-one"></div>
+          <div class="project-body">
+            <p class="project-meta">01 · Portfolio + Identity</p>
+            <h3 class="project-title">Marlowe Studio</h3>
+            <p class="project-description">
+              Editorial-inspired portfolio for a creative studio, designed to elevate
+              case studies and increase qualified inbound leads.
+            </p>
+            <a class="project-link" href="#contact">View project</a>
+          </div>
+        </article>
 
-      <article class="project-card reveal">
-        <span class="project-number">01</span>
-        <h3 class="project-title">Lumière Editorial</h3>
-        <p class="project-desc">
-          Complete visual identity and digital platform for an independent
-          photography magazine focused on documentary work.
+        <article class="project reveal">
+          <div class="project-media project-media-two"></div>
+          <div class="project-body">
+            <p class="project-meta">02 · Landing + CMS</p>
+            <h3 class="project-title">NOVA Advisory</h3>
+            <p class="project-description">
+              Premium one-page presence for a consulting brand, with clear messaging,
+              strong hierarchy, and seamless mobile performance.
+            </p>
+            <a class="project-link" href="#contact">View project</a>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-media project-media-three"></div>
+          <div class="project-body">
+            <p class="project-meta">03 · Design + Development</p>
+            <h3 class="project-title">Maison Ciel</h3>
+            <p class="project-description">
+              High-contrast digital experience for a boutique hospitality brand,
+              balancing storytelling, interaction, and conversion.
+            </p>
+            <a class="project-link" href="#contact">View project</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="services" class="section section-muted">
+      <div class="section-head">
+        <p class="section-label">Services</p>
+        <h2 class="section-title reveal">What I can help you with.</h2>
+      </div>
+      <div class="services-grid stagger-parent">
+        <article class="service-card reveal">
+          <h3>Creative Direction</h3>
+          <p>Positioning, visual systems, and overall art direction for digital-first brands.</p>
+        </article>
+        <article class="service-card reveal">
+          <h3>Portfolio Design</h3>
+          <p>Elegant one-page or multi-page portfolio sites that showcase your work with clarity.</p>
+        </article>
+        <article class="service-card reveal">
+          <h3>Front-End Build</h3>
+          <p>Fast, responsive, and accessible builds with smooth interactions and clean structure.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-head">
+        <p class="section-label">About</p>
+        <h2 class="section-title reveal">Design sensibility with production discipline.</h2>
+      </div>
+      <div class="about-grid">
+        <p class="about-text reveal">
+          I’m Nathalie, a multidisciplinary designer and front-end developer based in Paris.
+          I work with founders, studios, and agencies to shape digital experiences that feel
+          refined and perform in the real world.
         </p>
-        <div class="project-tags">
-          <span class="project-tag">Brand</span>
-          <span class="project-tag">Web</span>
-          <span class="project-tag">Typography</span>
-        </div>
-        <span class="project-arrow" aria-hidden="true">↗</span>
-      </article>
+        <ul class="about-list stagger-parent">
+          <li class="reveal">Brand-aligned visual systems</li>
+          <li class="reveal">Clear case-study storytelling</li>
+          <li class="reveal">Conversion-aware UX structure</li>
+          <li class="reveal">Detail-driven implementation</li>
+        </ul>
+      </div>
+    </section>
 
-      <article class="project-card reveal">
-        <span class="project-number">02</span>
-        <h3 class="project-title">Atelier Sonore</h3>
-        <p class="project-desc">
-          Immersive portfolio site for a Parisian sound artist. Designed to let
-          the work breathe with generous whitespace and minimal chrome.
-        </p>
-        <div class="project-tags">
-          <span class="project-tag">Web Design</span>
-          <span class="project-tag">Dev</span>
-        </div>
-        <span class="project-arrow" aria-hidden="true">↗</span>
-      </article>
+    <section id="contact" class="section section-contact">
+      <p class="section-label">Contact</p>
+      <h2 class="contact-title reveal">Let’s create a portfolio site that feels like your best work.</h2>
+      <div class="contact-links stagger-parent">
+        <a class="contact-link reveal" href="mailto:hello@nathalie.design">
+          <span>Email</span>
+          <strong>hello@nathalie.design</strong>
+        </a>
+        <a class="contact-link reveal" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <span>LinkedIn</span>
+          <strong>nathalie-dubois</strong>
+        </a>
+        <a class="contact-link reveal" href="https://github.com" target="_blank" rel="noopener noreferrer">
+          <span>GitHub</span>
+          <strong>@nathalie</strong>
+        </a>
+      </div>
+      <a class="button button-primary reveal" href="mailto:hello@nathalie.design">Book a discovery call</a>
+    </section>
+  </main>
 
-      <article class="project-card reveal">
-        <span class="project-number">03</span>
-        <h3 class="project-title">Morceau de Nuit</h3>
-        <p class="project-desc">
-          Conceptual fashion lookbook translated into an interactive web
-          experience — grid-based, high contrast, no colour.
-        </p>
-        <div class="project-tags">
-          <span class="project-tag">Creative Dev</span>
-          <span class="project-tag">Art Direction</span>
-        </div>
-        <span class="project-arrow" aria-hidden="true">↗</span>
-      </article>
-
-      <article class="project-card reveal">
-        <span class="project-number">04</span>
-        <h3 class="project-title">Studio Tertre</h3>
-        <p class="project-desc">
-          Identity system and website for a Marseille-based architecture
-          practice. Clean, grid-driven, and built to last.
-        </p>
-        <div class="project-tags">
-          <span class="project-tag">Identity</span>
-          <span class="project-tag">Web</span>
-          <span class="project-tag">Print</span>
-        </div>
-        <span class="project-arrow" aria-hidden="true">↗</span>
-      </article>
-
-    </div>
-  </section>
-
-  <!-- ── Contact ─────────────────────────────────────────── -->
-  <section id="contact">
-    <p class="section-label">Get in touch</p>
-    <h2 class="contact-headline reveal">
-      Let's make something<br/>worth remembering.
-    </h2>
-    <div class="contact-links stagger-parent">
-      <a class="contact-link reveal" href="mailto:hello@nathalie.design">
-        <span class="contact-link-label">Email</span>
-        <span class="contact-link-value">hello@nathalie.design</span>
-      </a>
-      <a class="contact-link reveal" href="https://linkedin.com" target="_blank" rel="noopener">
-        <span class="contact-link-label">LinkedIn</span>
-        <span class="contact-link-value">nathalie-dubois</span>
-      </a>
-      <a class="contact-link reveal" href="https://github.com" target="_blank" rel="noopener">
-        <span class="contact-link-label">GitHub</span>
-        <span class="contact-link-value">@nathalie</span>
-      </a>
-    </div>
-  </section>
-
-  <!-- ── Footer ──────────────────────────────────────────── -->
   <footer>
-    <span>© 2026 Nathalie Dubois</span>
-    <span>Designed &amp; built by me</span>
+    <span>© <span id="year"></span> Nathalie Dubois</span>
+    <span>Designed &amp; developed with intention</span>
   </footer>
 
   <script src="script.js"></script>
